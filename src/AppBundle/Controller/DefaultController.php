@@ -28,6 +28,8 @@ class DefaultController extends Controller
      */
     public function beatmakerAction(Request $request)
     {
+        $pseudo = new Pseudo;
+        $pseudo->setContent("");
         return $this->render('default/dirtyBeatmaker.html.twig');
     }
     /**
