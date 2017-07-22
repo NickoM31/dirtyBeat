@@ -74,10 +74,12 @@
 
 
 {% block events %}
+    {{ parent() }}
+    <h2>bigblock</h2>
+
 {% endblock %}
 
 {% block images %}
-
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
